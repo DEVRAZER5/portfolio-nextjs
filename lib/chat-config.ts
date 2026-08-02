@@ -5,7 +5,7 @@
 // behavior or swap models without touching the route handler or the
 // client component.
 
-import { projects } from "@/data/projects";
+import { projects } from "../data/projects";
 
 // Model to use for the chat. Swap this string to try a different
 // Claude model (e.g. a faster/cheaper one for a demo, or a larger

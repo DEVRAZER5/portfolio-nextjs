@@ -6,7 +6,7 @@
 
 import { anthropic } from "@ai-sdk/anthropic";
 import { streamText } from "ai";
-import { SYSTEM_PROMPT, CHAT_MODEL } from "@/lib/chat-config";
+import { SYSTEM_PROMPT, CHAT_MODEL } from "../../../lib/chat-config";
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
