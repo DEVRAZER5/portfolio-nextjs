@@ -11,12 +11,13 @@ import { tools } from "@/lib/tools";
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
+  const modelMessage = await convertToModelMessages(messages);
   console.log("DEBUG messages:", JSON.stringify(messages));
 
   const result = streamText({
     model: anthropic(CHAT_MODEL),
     system: SYSTEM_PROMPT,
-    messages: convertToModelMessages(messages),
+    messages: modelMessage,
     tools,
     // Allow the model to call a tool and then use the result to write
     // its final answer, instead of stopping right after the tool call.
