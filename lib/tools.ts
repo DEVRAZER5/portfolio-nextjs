@@ -10,7 +10,7 @@ import { projects } from "@/data/projects";
 export const getProjectDetails = tool({
   description:
     "Look up full details for one of Rifet's real projects by name or slug. Use this whenever the visitor asks about a specific project (e.g. 'tell me about the Amazon clone') instead of answering from memory, so the answer is always grounded in the real case study data.",
-  parameters: z.object({
+  inputSchema: z.object({
     query: z
       .string()
       .describe(
