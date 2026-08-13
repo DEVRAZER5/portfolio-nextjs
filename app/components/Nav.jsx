@@ -5,7 +5,7 @@ export default function Nav() {
     <header className="border-b border-gray-200 bg-white">
       <nav className="max-w-4xl mx-auto flex items-center justify-between px-6 py-4">
         <Link href="/" className="font-bold text-ink text-lg">
-          Rifet Mehić
+          RM
         </Link>
         <div className="flex gap-6 text-sm text-muted">
           <Link href="/" className="hover:text-accent">
