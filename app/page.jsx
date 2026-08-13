@@ -7,7 +7,7 @@ export default function Home() {
         Frontend developer who ships real projects.
       </h1>
       <p className="text-muted text-lg mb-8 max-w-2xl mx-auto">
-        I'm Rifet Mehić, an Informatics Engineer building clean, functional
+        I'm RM, an Informatics Engineer building clean, functional
         websites and learning in public — one real project at a time.
       </p>
       <Link

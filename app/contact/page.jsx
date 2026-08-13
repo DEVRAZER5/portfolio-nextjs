@@ -6,10 +6,10 @@ export default function ContactPage() {
         Want to work together, or just want to say hi? Reach out.
       </p>
       <a
-        href="mailto:rifetmehic99@gmail.com"
+        href="mailto:softver.developer26@gmail.com"
         className="inline-block bg-accent text-white px-6 py-3 rounded-lg font-medium hover:opacity-90"
       >
-        rifetmehic99@gmail.com
+        softver.developer26@gmail.com
       </a>
     </section>
   );
