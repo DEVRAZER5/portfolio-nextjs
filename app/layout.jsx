@@ -2,7 +2,7 @@ import "./globals.css";
 import Nav from "./components/Nav";
 
 export const metadata = {
-  title: "Rifet Mehić — Portfolio",
+  title: "RM  Portfolio",
   description: "Frontend AI Engineering portfolio",
 };
 
