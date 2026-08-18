@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Hero3DLoader from "./components/Hero3DLoader";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       >
         See my work
       </Link>
+      <div className="max-w-md mx-auto mt-14">
+        <Hero3DLoader/>
+      </div>
     </section>
   );
 }
