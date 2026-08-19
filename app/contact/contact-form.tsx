@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const EMAIL_RE =
+  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -23,7 +24,7 @@ export default function ContactForm() {
     }
     if (!message.trim()) errors.message = "Please write a short message.";
     else if (message.trim().length < 10) {
-      errors.message = "A little more detail helps — at least 10 characters.";
+      errors.message = "A little more detail helps, at least 10 characters.";
     }
     return errors;
   }
@@ -64,7 +65,7 @@ export default function ContactForm() {
       >
         <p className="font-medium text-green-800 mb-1">Message sent!</p>
         <p className="text-sm text-green-700 mb-4">
-          Thanks for reaching out. I'll get back to you soon.
+          Thanks for reaching out, I'll get back to you soon.
         </p>
         <button
           type="button"
