@@ -31,7 +31,7 @@ Open http://localhost:3000
 No environment variables are required for this scaffold.
 
 
-## 3D Experience (FE-AA2)
+## 3D Experience 
 
 **What I built:** An interactive 3D hero accent on the homepage, a
 rotating icosahedron built with React Three Fiber. Click it to cycle
